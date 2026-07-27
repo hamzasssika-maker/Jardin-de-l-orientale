@@ -1,0 +1,22 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/salle-des-fetes",
+      "destination": "/salle-couverte.html"
+    },
+    {
+      "source": "/jardin-imperial",
+      "destination": "/jardin-1.html"
+    },
+    {
+      "source": "/jardin-andalou",
+      "destination": "/jardin-2.html"
+    }
+  ]
+}
