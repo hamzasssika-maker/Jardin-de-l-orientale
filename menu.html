@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Jardin de L'oientale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <a href="index.html" class="logo">Jardin <span class="dot">•</span>de L'Orientale</a>
+  <nav class="main-nav" id="mainNav">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#salles">Nos Salles</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="negafa.html">Négafa</a></li>
+      <li><a href="reservation.html">Réservation</a></li>
+    </ul>
+  </nav>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<div class="theme-toggle" id="themeToggle" title="Changer de thème">
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+</div>
+
+<div class="quick-nav" id="quickNav">
+  <div class="quick-nav-inner">
+    <a href="index.html#salles" >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+      <span class="qn-label">Nos Salles</span>
+    </a>
+    <a href="menu.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2v8a3 3 0 0 0 3 3v9M6 2v20M18 2v20M18 2c0 4-3 4-3 8"/></svg>
+      <span class="qn-label">Menu</span>
+    </a>
+    <a href="negafa.html" >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z"/></svg>
+      <span class="qn-label">Négafa</span>
+    </a>
+    <a href="reservation.html" >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
+      <span class="qn-label">Réservation</span>
+    </a>
+  </div>
+</div>
+
+
+<section class="page-hero">
+  <span class="eyebrow">Notre carte</span>
+  <h1>Un menu digne de vos invités</h1>
+</section>
+
+<div id="tabsSentinel"></div>
+<section class="menu-tabs-wrap" id="menuTabsWrap">
+  <div class="menu-tabs" id="menuTabs">
+    <button class="tab-btn active" data-filter="entrees">Entrées</button>
+    <button class="tab-btn" data-filter="plats">Plats principaux</button>
+    <button class="tab-btn" data-filter="desserts">Desserts</button>
+  </div>
+</section>
+
+<div class="menu-category-video" id="categoryVideoWrap" data-video-wrap>
+  <video id="categoryVideo" muted loop playsinline preload="none" poster="images/logo-poster.jpg">
+    <source id="categorySource" src="" type="video/mp4">
+  </video>
+  <div class="media-fallback"></div>
+  <div class="category-video-caption"><h2 id="categoryTitle">Entrées</h2></div>
+</div>
+
+<section style="padding-top:64px;">
+  <div class="menu-grid">
+    <div class="menu-card" data-category="entrees" data-img="https://picsum.photos/seed/pastilla-poulet/500/400" data-name="Pastilla au Poulet" data-desc="Feuilleté croustillant, poulet effiloché, amandes et cannelle.">
+      <div class="photo" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1784395935/menu-Gateaux_k3l1kj.mp4"><img src="images/logo-poster.jpg" alt="Pastilla au poulet"><video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video><div class="play-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="info">
+        <span class="tag">Entrée signature</span>
+        <h3>Plateau de Pâtisseries</h3>
+        <p class="desc">Cornes de gazelle, chebakia et sablés au miel et amandes.</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="plats" data-img="images/logo-poster.jpg" data-name="Poulet (3) &amp; Viande aux Pruneaux" data-desc="Formule complète : poulet et viande mijotée aux pruneaux.">
+      <div class="photo" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1785084630/Poulet_3_Viande_Aux_Pruneaux_jvn7kd.mp4"><img src="images/logo-poster.jpg" alt="Poulet (3) &amp; Viande aux Pruneaux"><video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video><div class="play-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="info">
+        <span class="tag">Plat principal</span>
+        <h3>Poulet (3) &amp; Viande aux Pruneaux</h3>
+        <p class="desc">Formule complète : poulet et viande mijotée aux pruneaux.</p>
+        <div class="price-row"><span class="price">2000 DH</span></div>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="plats" data-img="images/logo-poster.jpg" data-name="Poulet (4) &amp; Viande aux Pruneaux" data-desc="Formule complète : poulet et viande mijotée aux pruneaux, pour plus de convives.">
+      <div class="photo" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1785084648/Poulet_4_Viande_Aux_Pruneaux_iu085c.mp4"><img src="images/logo-poster.jpg" alt="Poulet (4) &amp; Viande aux Pruneaux"><video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video><div class="play-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="info">
+        <span class="tag">Plat principal</span>
+        <h3>Poulet (4) &amp; Viande aux Pruneaux</h3>
+        <p class="desc">Formule complète : poulet et viande mijotée aux pruneaux, pour plus de convives.</p>
+        <div class="price-row"><span class="price">2200 DH</span></div>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="plats" data-img="images/logo-poster.jpg" data-name="Harira &amp; Viande Grillée aux Légumes" data-desc="Harira traditionnelle, viande grillée et légumes de saison.">
+      <div class="photo" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1785084556/menu-harira-grillades_mvpnmg.mp4"><img src="images/logo-poster.jpg" alt="Harira &amp; Viande Grillée aux Légumes"><video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video><div class="play-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="info">
+        <span class="tag">Plat principal</span>
+        <h3>Harira &amp; Viande Grillée aux Légumes</h3>
+        <p class="desc">Harira traditionnelle, viande grillée et légumes de saison.</p>
+        <div class="price-row"><span class="price">2400 DH</span></div>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="entrees" data-img="images/logo-poster.jpg" data-name="Pâtisseries" data-desc="Assortiment de mini pâtisseries marocaines : chocolat, amandes, citron, vanille et caramel aux noix.">
+      <div class="photo" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1784396016/menu-salade_boexoi.mp4"><img src="images/logo-poster.jpg" alt="Pâtisseries"><video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video><div class="play-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="info">
+        <span class="tag">Entrée</span>
+        <h3>Pâtisseries</h3>
+        <p class="desc">Assortiment de mini pâtisseries marocaines : chocolat, amandes, citron, vanille et caramel aux noix.</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="entrees" data-img="images/logo-poster.jpg" data-name="Boissons" data-desc="Assortiment de jus frais : avocat, banane, orange fraîche et fraise.">
+      <div class="photo" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1784395925/menu-briouates_ohjf9l.mp4"><img src="images/logo-poster.jpg" alt="Boissons"><video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video><div class="play-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="info">
+        <span class="tag">Entrée</span>
+        <h3>Boissons</h3>
+        <p class="desc">Assortiment de jus frais : avocat, banane, orange fraîche et fraise.</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="entrees" data-img="images/logo-poster.jpg" data-name="Plateau de Pâtisseries" data-desc="Cornes de gazelle, chebakia et sablés au miel et amandes.">
+      <div class="photo" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1784396022/menu-zaalouk_zs8djx.mp4"><img src="images/logo-poster.jpg" alt="Plateau de Pâtisseries"><video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video><div class="play-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="info">
+        <span class="tag">Entrée</span>
+        <h3>Plateau de Pâtisseries</h3>
+        <p class="desc">Cornes de gazelle, chebakia et sablés au miel et amandes.</p>
+      </div>
+    </div>
+
+
+
+
+    <div class="menu-card" data-category="plats" data-img="images/logo-poster.jpg" data-name="Pastilla au Poulet &amp; Viande aux Pruneaux" data-desc="Pastilla croustillante au poulet, accompagnée de viande aux pruneaux.">
+      <div class="photo" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1785084575/Pastilla_Au_Poulet_Grillades_Aux_L%C3%A9gumes_a9lxpg.mp4"><img src="images/logo-poster.jpg" alt="Pastilla au Poulet &amp; Viande aux Pruneaux"><video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video><div class="play-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="info">
+        <span class="tag">Plat principal</span>
+        <h3>Pastilla au Poulet &amp; Viande aux Pruneaux</h3>
+        <p class="desc">Pastilla croustillante au poulet, accompagnée de viande aux pruneaux.</p>
+        <div class="price-row"><span class="price">2500 DH</span></div>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="plats" data-img="images/logo-poster.jpg" data-name="Poulet &amp; Grillades aux Légumes" data-desc="Poulet et grillades assorties, servis avec légumes de saison.">
+      <div class="photo" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1785084629/Poulet_Grillades_Aux_L%C3%A9gumes_syqgj3.mp4"><img src="images/logo-poster.jpg" alt="Poulet &amp; Grillades aux Légumes"><video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video><div class="play-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="info">
+        <span class="tag">Plat principal</span>
+        <h3>Poulet &amp; Grillades aux Légumes</h3>
+        <p class="desc">Poulet et grillades assorties, servis avec légumes de saison.</p>
+        <div class="price-row"><span class="price">2800 DH</span></div>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="plats" data-img="images/logo-poster.jpg" data-name="Pastilla au Poulet &amp; Grillades aux Légumes" data-desc="Pastilla au poulet, grillades et légumes de saison.">
+      <div class="photo" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1785084575/Pastilla_Au_Poulet_Grillades_Aux_L%C3%A9gumes_a9lxpg.mp4"><img src="images/logo-poster.jpg" alt="Pastilla au Poulet &amp; Grillades aux Légumes"><video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video><div class="play-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="info">
+        <span class="tag">Plat principal</span>
+        <h3>Pastilla au Poulet &amp; Grillades aux Légumes</h3>
+        <p class="desc">Pastilla au poulet, grillades et légumes de saison.</p>
+        <div class="price-row"><span class="price">2900 DH</span></div>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="plats" data-img="images/logo-poster.jpg" data-name="Pastilla au Poisson &amp; Grillades aux Légumes" data-desc="Pastilla au poisson, grillades et légumes de saison.">
+      <div class="photo" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1785084556/menu-pastilla-poisson-grillades_nhda4s.mp4"><img src="images/logo-poster.jpg" alt="Pastilla au Poisson &amp; Grillades aux Légumes"><video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video><div class="play-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="info">
+        <span class="tag">Plat principal</span>
+        <h3>Pastilla au Poisson &amp; Grillades aux Légumes</h3>
+        <p class="desc">Pastilla au poisson, grillades et légumes de saison.</p>
+        <div class="price-row"><span class="price">3400 DH</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="dessert-carousel-wrap hide" id="dessertCarouselWrap">
+    <div class="vcarousel" data-video-wrap>
+      <div class="vcarousel-viewport">
+        <div class="vcarousel-track">
+          <div class="vcarousel-slide" data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1784395913/menu-fruits_ing9fv.mp4">
+            <video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video>
+            <div class="vc-fallback"></div>
+          </div>
+          <div class="vcarousel-slide insta-slide">
+            <a class="insta-slide-link" href="https://www.instagram.com/jardin_doriental?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+              <span>Suivez-nous sur Instagram</span>
+            </a>
+          </div>
+        </div>
+        <button class="vc-btn vc-prev" aria-label="Précédent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="vc-btn vc-next" aria-label="Suivant"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+        <div class="vc-play">
+          <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/></svg>
+          <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="vcarousel-counter">1 / 2</div>
+      </div>
+      <div class="vcarousel-info">
+        <div class="vcarousel-info-item active">
+          <span class="num">01</span>
+          <span class="tag">Dessert</span>
+          <h3>Coupe de Fruits Frais &amp; plus encore</h3>
+          <p>Melon, fraises, pastèque et menthe fraîche du jardin.</p>
+        </div>
+        <div class="vcarousel-info-item">
+          <span class="num">02</span>
+          <span class="tag">Retrouvez-nous</span>
+          <h3>suivez @jardin_doriental pour découvrir toutes nos créations sucrées.</h3>
+          
+          <a href="https://www.instagram.com/jardin_doriental?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="insta-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            Voir sur Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section style="text-align:center;padding-top:0;">
+  <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
+    <a href="reservation.html" class="btn btn-primary">Réserver une date</a>
+    <a href="negafa.html" class="btn btn-outline">Découvrir notre Négafa</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="logo">Jardin <span style="color:#C9A24B">•</span>de L'Oriental</div>
+  <div class="foot-links">
+    <a href="index.html">Accueil</a>
+    <a href="index.html#salles">Nos Salles</a>
+    <a href="menu.html">Menu</a>
+    <a href="negafa.html">Négafa</a>
+    <a href="reservation.html">Réservation</a>
+  </div>
+  <div class="social-row">
+    <a href="https://www.instagram.com/jardin_doriental?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@jardin.de.lorient?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.2 1.9 3.7 4.2 3.9v2.9c-1.5.1-2.9-.4-4.2-1.3v6.4a5.9 5.9 0 1 1-5.9-5.9c.3 0 .6 0 .9.1v3a2.9 2.9 0 1 0 2 2.8V3h3z"/></svg>
+    </a>
+  </div>
+  <p class="copy">© 2026 Jardin Oriental — Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

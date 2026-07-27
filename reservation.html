@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réservation — Jardin de L'oientale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <a href="index.html" class="logo">Jardin <span class="dot">•</span>de L'Oriental</a>
+  <nav class="main-nav" id="mainNav">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#salles">Nos Salles</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="negafa.html">Négafa</a></li>
+      <li><a href="reservation.html" class="active">Réservation</a></li>
+    </ul>
+  </nav>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<div class="theme-toggle" id="themeToggle" title="Changer de thème">
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+</div>
+
+<div class="quick-nav" id="quickNav">
+  <div class="quick-nav-inner">
+    <a href="index.html#salles" >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+      <span class="qn-label">Nos Salles</span>
+    </a>
+    <a href="menu.html" >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2v8a3 3 0 0 0 3 3v9M6 2v20M18 2v20M18 2c0 4-3 4-3 8"/></svg>
+      <span class="qn-label">Menu</span>
+    </a>
+    <a href="negafa.html" >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z"/></svg>
+      <span class="qn-label">Négafa</span>
+    </a>
+    <a href="reservation.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
+      <span class="qn-label">Réservation</span>
+    </a>
+  </div>
+</div>
+
+
+<section class="page-hero">
+  <span class="eyebrow">Réservation</span>
+  <h1>Réservez votre date</h1>
+  <p>Laissez-nous vos coordonnées, nous vous répondons directement sur WhatsApp.</p>
+</section>
+
+<section class="reservation-wrap">
+  <div class="res-card reveal">
+    <h2>Vos informations</h2>
+    <p>Réponse rapide, sans engagement.</p>
+    <form id="resForm">
+      <div class="field">
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" placeholder="Votre prénom" required>
+      </div>
+      <div class="field">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" placeholder="Votre nom" required>
+      </div>
+      <div class="field">
+        <label for="message">Message (optionnel)</label>
+        <textarea id="message" placeholder="Écrivez votre demande ou votre question ici..."></textarea>
+      </div>
+      <button type="submit" class="btn wa-btn">
+        <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.5.72 4.83 1.98 6.8L4 29l7.36-1.93a11.9 11.9 0 0 0 4.66.95h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 21.98a9.9 9.9 0 0 1-5.06-1.39l-.36-.21-4.37 1.14 1.17-4.26-.24-.44a9.9 9.9 0 0 1-1.51-5.3c0-5.48 4.46-9.94 9.97-9.94 5.5 0 9.97 4.46 9.97 9.94 0 5.49-4.47 9.96-9.97 9.96zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.37-1.47-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.09 3.19 5.06 4.47.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+        Réserver sur WhatsApp
+      </button>
+      <p class="form-note">En cliquant, vous serez redirigé vers WhatsApp avec vos informations pré-remplies.</p>
+    </form>
+  </div>
+
+  <div class="res-info reveal">
+    <div class="item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.62a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.46-1.2a2 2 0 0 1 2.11-.45c.84.3 1.72.51 2.62.63A2 2 0 0 1 22 16.92z"/></svg>
+      <span>+212 767 601 146</span>
+    </div>
+    <div class="item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s-8-7.5-8-13a8 8 0 0 1 16 0c0 5.5-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg>
+      <span>Oujda, Maroc</span>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="logo">Jardin <span style="color:#C9A24B">•</span>de L'Oriental</div>
+  <div class="foot-links">
+    <a href="index.html">Accueil</a>
+    <a href="index.html#salles">Nos Salles</a>
+    <a href="menu.html">Menu</a>
+    <a href="negafa.html">Négafa</a>
+    <a href="reservation.html">Réservation</a>
+  </div>
+  <div class="social-row">
+    <a href="https://www.instagram.com/jardin_doriental?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@jardin.de.lorient?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.2 1.9 3.7 4.2 3.9v2.9c-1.5.1-2.9-.4-4.2-1.3v6.4a5.9 5.9 0 1 1-5.9-5.9c.3 0 .6 0 .9.1v3a2.9 2.9 0 1 0 2 2.8V3h3z"/></svg>
+    </a>
+  </div>
+  <p class="copy">© 2026 Jardin Oriental — Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

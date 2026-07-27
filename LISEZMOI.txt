@@ -1,0 +1,52 @@
+JARDIN ORIENTAL — structure correcte des dossiers
+====================================================
+
+Ghadi tal9a f had dossier:
+  index.html, menu.html, negafa.html, reservation.html, etc.
+  style.css
+  script.js
+  images/logo-poster.jpg   <-- deja mrange (l logo dyalek)
+  videos/                  <-- khawi, khask tzid fih had les fichiers b HAD ASMIYA BALZBOT:
+
+hero.mp4
+salle-couverte.mp4
+jardin-1.mp4
+jardin-2.mp4
+menu-entrees.mp4
+menu-plats.mp4
+menu-desserts.mp4
+menu-Gateaux.mp4
+menu-poulet3-pruneaux.mp4
+menu-poulet4-pruneaux.mp4
+menu-harira-grillades.mp4
+menu-patisseries.mp4
+menu-salade.mp4
+menu-briouates.mp4
+menu-zaalouk.mp4
+menu-pastilla-poulet-pruneaux.mp4
+menu-poulet-grillades.mp4
+menu-pastilla-poulet-grillades.mp4
+menu-pastilla-poisson-grillades.mp4
+menu-fruits.mp4
+negafa-photo-1.mp4
+negafa-photo-2.mp4
+negafa-photo-3.mp4
+negafa-photo-4.mp4
+negafa-photo-5.mp4
+negafa-photo-6.mp4
+negafa-1.mp4
+negafa-2.mp4
+negafa-3.mp4
+
+(menu33.html ma khdamch fih walou f nav — khayeb ykon fichier zayd/qdim, momkin thasro ila makhdamtihch)
+
+MOHIM BEZZAF — POURQUOI KAN B9A "YAG3D BEZZAF":
+- Ila chi fichier video ma tzadch b nafss l'asm b3d li 3lah, l'browser ghadi ykhelli
+  jusqu'a 4 secondes (kant 8) 9bel ma yban l'image b3ad (fallback). Ila 3andek
+  bezzaf dyal ces vidéos li khassin sur une seule page, w kolla wa7da katsenna
+  qbel matban, had chi kaywali beti l'impression bela site "ta9el bezzaf".
+- Conseil: compressez les vidéos (H.264, ~720p, moins de 3-5 Mo chacune) qbel
+  matuploadihom — Netlify/GitHub Pages 3andhom limite dyal taille w vitesse,
+  w des vidéos kbar ghadi ykhalliw le site يبطئ bezzaf 3la mobile/connexion 3adia.
+- On peut aussi ajouter un attribut "preload" plus agressif ou compresser
+  davantage si le souci persiste une fois les vidéos en place.

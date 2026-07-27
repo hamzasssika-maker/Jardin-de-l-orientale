@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jardin 1 — Jardin Oriental</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <a href="index.html" class="logo">Jardin <span class="dot">•</span> Oriental</a>
+  <nav class="main-nav" id="mainNav">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#salles" class="active">Nos Salles</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="negafa.html">Négafa</a></li>
+      <li><a href="reservation.html">Réservation</a></li>
+    </ul>
+  </nav>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<div class="theme-toggle" id="themeToggle" title="Changer de thème">
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+</div>
+
+<div class="quick-nav" id="quickNav">
+  <div class="quick-nav-inner">
+    <a href="index.html#salles" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+      <span class="qn-label">Nos Salles</span>
+    </a>
+    <a href="menu.html" >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2v8a3 3 0 0 0 3 3v9M6 2v20M18 2v20M18 2c0 4-3 4-3 8"/></svg>
+      <span class="qn-label">Menu</span>
+    </a>
+    <a href="negafa.html" >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z"/></svg>
+      <span class="qn-label">Négafa</span>
+    </a>
+    <a href="reservation.html" >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
+      <span class="qn-label">Réservation</span>
+    </a>
+  </div>
+</div>
+
+
+<div class="detail-reel-wrap">
+  <div class="salle-detail-media" data-video-wrap data-src="https://res.cloudinary.com/ry1jwufq/video/upload/v1785084397/jardin-1_vxllfp.mp4">
+    <video muted loop playsinline preload="none" poster="images/logo-poster.jpg"></video>
+    <div class="media-fallback"></div>
+  </div>
+</div>
+
+<div class="salle-detail-content reveal">
+  <span class="eyebrow">Espace 02</span>
+  <h1>Jardin 1</h1>
+  <p>Un jardin verdoyant à ciel ouvert, planté d'oliviers et de rosiers, parfait pour une cérémonie en pleine nature sous les lumières du soir.</p>
+
+  <div class="feature-list">
+    <div class="feature-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+      <span>Capacité jusqu'à 250 invités</span>
+    </div>
+    <div class="feature-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 5v5l4 2"/></svg>
+      <span>Espace extérieur ombragé</span>
+    </div>
+    <div class="feature-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <span>Éclairage romantique &amp; guirlandes</span>
+    </div>
+    <div class="feature-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg>
+      <span>Fontaine &amp; allées fleuries</span>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:16px;flex-wrap:wrap;">
+    <a href="reservation.html" class="btn btn-primary">Réserver ce jardin</a>
+    <a href="index.html#salles" class="btn btn-outline">Voir les autres espaces</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="logo">Jardin <span style="color:#C9A24B">•</span>de L'Oriental</div>
+  <div class="foot-links">
+    <a href="index.html">Accueil</a>
+    <a href="index.html#salles">Nos Salles</a>
+    <a href="menu.html">Menu</a>
+    <a href="negafa.html">Négafa</a>
+    <a href="reservation.html">Réservation</a>
+  </div>
+  <div class="social-row">
+    <a href="https://www.instagram.com/jardin_doriental?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@jardin.de.lorient?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.2 1.9 3.7 4.2 3.9v2.9c-1.5.1-2.9-.4-4.2-1.3v6.4a5.9 5.9 0 1 1-5.9-5.9c.3 0 .6 0 .9.1v3a2.9 2.9 0 1 0 2 2.8V3h3z"/></svg>
+    </a>
+  </div>
+  <p class="copy">© 2026 Jardin Oriental — Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
